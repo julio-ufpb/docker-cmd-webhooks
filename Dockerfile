@@ -1,8 +1,12 @@
 FROM ubuntu:latest
 
 # Install Docker client and Java
-RUN apt-get update && apt-get install -y \
-    docker.io \
+RUN apt-get update
+
+RUN apt-get install -y \
+    docker.io
+
+RUN apt-get install -y \
 	openjdk-17-jdk
 
 ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
