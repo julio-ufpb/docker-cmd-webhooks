@@ -13,6 +13,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
 
 # Expose Docker socket
 VOLUME /var/run/docker.sock
+VOLUME /usr/local/bin
 
 # Expose port
 EXPOSE 8080
