@@ -1,0 +1,8 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+PRIVATE_API_KEY: ${SECRET_API_KEY:ffffffffffffffffffffffffffffffffffffffff}
+
+spring:
+  config:
+    import: "optional:file:./config.yml"
